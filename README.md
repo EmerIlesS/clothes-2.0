@@ -53,7 +53,10 @@ El widget de accesibilidad incluye las siguientes opciones:
 - Variables CSS para consistencia en colores y espaciado
 - Animaciones suaves para mejor UX
 - Diseño mobile-first
+## Video demostrativo
+En este video, se presenta una demostración de las funcionalidades de la tienda de ropa, incluyendo la integración con Google Gemini AI y las opciones de accesibilidad disponibles.
 
+[Ir al video demostrativo](https://drive.google.com/file/d/1e30Fsm5bllOohk1qYhpdpLR8u7CdmQPJ/view?usp=sharing)
 ## 🛠️ Instalación
 
 1. **Clonar el repositorio**
