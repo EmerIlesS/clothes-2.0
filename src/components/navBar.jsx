@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 import { useCart } from '../context/cartContext';
-import '../styles/navBar.css';
+import '../styles/navbar.css';
 
 const NavBar = () => {
     const { data: session } = useSession();
