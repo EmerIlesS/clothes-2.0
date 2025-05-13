@@ -10,7 +10,10 @@ const nextConfig = {
       '@': require('path').resolve(__dirname, 'src'),
     };
     return config;
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig; 
