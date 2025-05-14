@@ -1,14 +1,16 @@
+// app/productos/page.jsx
 'use client';
 export const dynamic = 'force-dynamic';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { productsData } from '../../data/products';
 import { useCart } from '../../context/cartContext';
 import './products.css';
 
-const ProductsPage = () => {
+// Este es el componente envuelto que SÍ puede usar useSearchParams
+const ProductsClient = () => {
     const searchParams = useSearchParams();
     const generoParam = searchParams.get('categoria');
     const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -84,6 +86,15 @@ const ProductsPage = () => {
                 )}
             </section>
         </main>
+    );
+};
+
+// Este es el wrapper con Suspense
+const ProductsPage = () => {
+    return (
+        <Suspense fallback={<p>Cargando productos...</p>}>
+            <ProductsClient />
+        </Suspense>
     );
 };
 
