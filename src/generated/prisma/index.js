@@ -108,7 +108,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\ilese\\OneDrive\\Documentos\\Andres\\clothes\\src\\generated\\prisma",
+      "value": "C:\\Users\\ilese\\Documents\\Frond-End\\proyecto final\\clothes-2.0\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -122,12 +122,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\ilese\\OneDrive\\Documentos\\Andres\\clothes\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\ilese\\Documents\\Frond-End\\proyecto final\\clothes-2.0\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.7.0",
