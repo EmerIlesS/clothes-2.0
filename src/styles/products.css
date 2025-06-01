@@ -146,32 +146,127 @@
         padding: 1rem;
     }
 
+    .products-container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
     .category-filter {
-        padding: 0.5rem;
+        overflow-x: auto;
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
     }
 
     .filter-button {
-        padding: 0.4rem 1rem;
+        flex-shrink: 0;
+        min-width: 120px;
+        padding: 0.75rem 1rem;
         font-size: 0.9rem;
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1rem;
+        padding: 0.5rem;
     }
 
     .product-image {
         height: 250px;
     }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .add-to-cart {
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 480px) {
+    .products-container {
+        padding: 0.5rem;
+    }
+
+    .products-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .category-filter {
+        padding: 0.75rem 0.25rem;
+        gap: 0.25rem;
+    }
+
+    .filter-button {
+        min-width: 100px;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
     .products-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.25rem;
+    }
+
+    .product-card {
+        max-width: 100%;
     }
 
     .product-image {
         height: 200px;
+    }
+
+    .product-info {
+        padding: 0.75rem;
+    }
+
+    .product-info h3 {
+        font-size: 1rem;
+    }
+
+    .product-category {
+        font-size: 0.8rem;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+    }
+
+    .add-to-cart {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+/* Mejoras para touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .filter-button,
+    .add-to-cart {
+        min-height: 44px;
+        padding: 0.75rem 1rem;
+    }
+
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover .product-img {
+        transform: none;
+    }
+
+    .filter-button:hover {
+        transform: none;
     }
 }
 

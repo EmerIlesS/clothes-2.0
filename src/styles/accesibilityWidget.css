@@ -88,3 +88,94 @@
 
 /* Los otros modos (protanopia, deuteranopia, tritanopia) 
    se manejan mediante los filtros SVG */
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    .accessibility-widget {
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        top: auto;
+        transform: none;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .accessibility-widget.open {
+        padding: 15px;
+        min-width: 200px;
+    }
+
+    .widget-toggle {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .widget-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .widget-buttons button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accessibility-widget {
+        bottom: 120px;
+        right: 5px;
+        padding: 8px;
+    }
+
+    .accessibility-widget.open {
+        padding: 12px;
+        min-width: 180px;
+    }
+
+    .widget-toggle {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+    }
+
+    .widget-buttons {
+        max-width: 180px;
+        gap: 6px;
+    }
+
+    .widget-buttons button {
+        width: 42px;
+        height: 42px;
+        padding: 6px;
+    }
+}
+
+/* Mejoras para touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .widget-toggle,
+    .widget-buttons button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .widget-buttons button:hover {
+        transform: none;
+        background: #e0e0e0;
+    }
+
+    .widget-buttons button.active:hover {
+        background: #2c5282;
+    }
+}
+
+/* Evitar conflictos con z-index en móviles */
+@media (max-width: 768px) {
+    .accessibility-widget {
+        z-index: 9998;
+    }
+}
