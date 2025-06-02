@@ -5,7 +5,8 @@ export const productsData = [
     precio: 29990, 
     categoria: "camisetas",
     genero: "Caballero",
-    imagen: "/images/camisetaAzul.jpg",
+    imagen: "/images/camisetaAzul.webp",
+    
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const productsData = [
     precio: 39990,
     categoria: "camisetas",
     genero: "Dama",
-    imagen: "/images/camisetaRoja.jpg",
+    imagen: "/images/camisetaRoja.webp",
   },
   {
     id: 3,
@@ -21,7 +22,7 @@ export const productsData = [
     precio: 24990,
     categoria: "camisetas",
     genero: "caballero",
-    imagen: "/images/camisetaNegra.jpg",
+    imagen: "/images/camisetaNegra.webp",
   },
   {
     id: 4,
@@ -29,7 +30,7 @@ export const productsData = [
     precio: 29990,
     categoria: "camisetas",
     genero: "Caballero",
-    imagen: "/images/camisetaBeige.jpg",
+    imagen: "/images/camisetaBeige.webp",
   },
   {
     id: 5,
@@ -37,7 +38,7 @@ export const productsData = [
     precio: 29990,
     categoria: "camisetas",
     genero: "Caballero",
-    imagen: "/images/camisetaBlanca.jpg",
+    imagen: "/images/camisetaBlanca.webp",
   },
   {
     id: 6,
@@ -45,7 +46,7 @@ export const productsData = [
     precio: 59990,
     categoria: "pantalones",
     genero: "Caballero",
-    imagen: "/images/pantalonAzul.jpg",
+    imagen: "/images/pantalonAzul.webp",
   },
   {
     id: 7,
@@ -53,6 +54,6 @@ export const productsData = [
     precio: 59990,
     categoria: "pantalones",
     genero: "Caballero",
-    imagen: "/images/pantalonNegro.jpg",
+    imagen: "/images/pantalonNegro.webp",
   },
 ];
