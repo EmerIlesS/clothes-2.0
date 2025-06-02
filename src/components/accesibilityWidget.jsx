@@ -100,6 +100,7 @@ const AccesibilityWidget = () => {
             <button 
                 className="widget-toggle"
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label="Abrir/Cerrar opciones de accesibilidad"
                 data-tooltip-id="accessibility-tooltip"
                 data-tooltip-content="Opciones de accesibilidad"
                 aria-expanded={isOpen}
