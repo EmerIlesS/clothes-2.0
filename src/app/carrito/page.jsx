@@ -14,7 +14,7 @@ const CartPage = () => {
 
     return (
         <main className="cart-container" role="main">
-            <h1>Carrito de Compras</h1>
+            <h1 className="carrito-title">Carrito de Compras</h1>
             {cartItems.length === 0 ? (
                 <p role="alert">Tu carrito está vacío</p>
             ) : (

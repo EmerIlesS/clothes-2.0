@@ -27,7 +27,7 @@ const ContactPage = () => {
 
     return (
         <main className="contact-container" role="main">
-            <h1>Contacto</h1>
+            <h1 className="contact-title">Contacto</h1>
             
             <section className="contact-info" aria-label="Información de contacto">
                 <article className="info-card" role="contentinfo">

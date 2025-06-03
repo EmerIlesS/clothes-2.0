@@ -69,7 +69,7 @@ export default function RegisterPage() {
     return (
         <div className="login-container">
             <div className="login-card">
-                <h1>Registro</h1>
+                <h1 className="register-title">Registro</h1>
                 {error && <div className="error-message">{error}</div>}
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">

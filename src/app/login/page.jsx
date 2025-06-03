@@ -36,7 +36,7 @@ export default function LoginPage() {
     return (
         <div className="login-container">
             <div className="login-card">
-                <h1>Iniciar Sesión</h1>
+                <h1 className="login-title">Iniciar Sesión</h1>
                 {error && <div className="error-message">{error}</div>}
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">

@@ -37,7 +37,7 @@ const ProductsClient = () => {
 
     return (
         <main className="products-container" role="main">
-            <h1>Nuestros Productos</h1>
+            <h1 className="productos-title">Nuestros Productos</h1>
             
             <nav className="category-filter" aria-label="Filtro de categorías">
                 {categories.map(category => (
